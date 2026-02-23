@@ -1,8 +1,7 @@
-import asyncio
 import math
 
 
-async def is_prime(n: int) -> bool:
+def is_prime(n: int) -> bool:
     """Check if a number is prime."""
     if n < 2:
         return False
@@ -16,8 +15,6 @@ async def is_prime(n: int) -> bool:
     for i in range(3, root + 1, 2):
         if n % i == 0:
             return False
-        if i % 100_000 == 1:
-            await asyncio.sleep(0)
     return True
 
 
