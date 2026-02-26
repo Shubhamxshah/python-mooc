@@ -24,6 +24,5 @@ def main() -> None:
     elapsed = perf_counter() - t0
     print(f'Total time: {elapsed:.2f}s')
 
-
 if __name__ == '__main__':
     main()
